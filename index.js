@@ -12,7 +12,7 @@ function findUrlParameter(parameterName) {
 function redirectToDesktop() {
     const idToken = findUrlParameter("id_token");
     const accessToken = findUrlParameter("access_token");
-    const appLinkScheme = "emailsenderscheme";
+    const appLinkScheme = "EmailSender";
     const appLinkAuthority = "app.emailsender.com";
     const appLinkUrl = `${appLinkScheme}://${appLinkAuthority}/google-auth?id_token=${idToken}&access_token=${accessToken}`;
     console.log(appLinkUrl)
